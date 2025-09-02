@@ -1,0 +1,343 @@
+{
+	"info": {
+		"_postman_id": "a2ef4835-83c5-4fce-bbe1-692ad8bd425e",
+		"name": "GETAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23161433"
+	},
+	"item": [
+		{
+			"name": "GetUser",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.response.headers.toString();\r",
+							"console.log(\"This is 1st test\")"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/public-api/users/",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"public-api",
+						"users",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GetUser",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/public-api/users/",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"public-api",
+								"users",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 09 Oct 2024 02:48:16 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"d7f1eb9a3bec4bb0c8e7e7a94940fa02\""
+						},
+						{
+							"key": "referrer-policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "vary",
+							"value": "Origin"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-download-options",
+							"value": "noopen"
+						},
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "x-permitted-cross-domain-policies",
+							"value": "none"
+						},
+						{
+							"key": "x-request-id",
+							"value": "43b07a55-c15e-4afd-a8af-395f1aa7ebac"
+						},
+						{
+							"key": "x-runtime",
+							"value": "0.025911"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "0"
+						},
+						{
+							"key": "cf-cache-status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=3UzGURWsVGI4Gucz00BAKUwUVUx9phsEU%2F%2FI9OWbNryhLX9prANztcsy9FCP0UN1XThhNB77h8Ivd3OskavEOex%2Fwq5EFmueF9dV1PHDUuOHMiN0zUgUKEZqzwpjYkU%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "NEL",
+							"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "8cfb0cfe3ea70d8f-MRS"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"meta\": {\n        \"pagination\": {\n            \"total\": 2864,\n            \"pages\": 287,\n            \"page\": 1,\n            \"limit\": 10\n        }\n    },\n    \"data\": [\n        {\n            \"id\": 7461161,\n            \"name\": \"Laal Kocchar MD\",\n            \"email\": \"laal_kocchar_md@stokes.example\",\n            \"gender\": \"female\",\n            \"status\": \"inactive\"\n        },\n        {\n            \"id\": 7461158,\n            \"name\": \"Kama Agarwal LLD\",\n            \"email\": \"kama_lld_agarwal@feest.example\",\n            \"gender\": \"female\",\n            \"status\": \"inactive\"\n        },\n        {\n            \"id\": 7461155,\n            \"name\": \"Chaturbhuj Singh\",\n            \"email\": \"singh_chaturbhuj@hickle-roob.test\",\n            \"gender\": \"female\",\n            \"status\": \"active\"\n        },\n        {\n            \"id\": 7461154,\n            \"name\": \"Msgr. Triloki Nath Varma\",\n            \"email\": \"msgr_nath_varma_triloki@zieme.test\",\n            \"gender\": \"female\",\n            \"status\": \"inactive\"\n        },\n        {\n            \"id\": 7461153,\n            \"name\": \"Subhasini Pothuvaal\",\n            \"email\": \"subhasini_pothuvaal@sawayn.example\",\n            \"gender\": \"male\",\n            \"status\": \"inactive\"\n        },\n        {\n            \"id\": 7461152,\n            \"name\": \"Dhana Banerjee\",\n            \"email\": \"banerjee_dhana@swaniawski-fay.example\",\n            \"gender\": \"male\",\n            \"status\": \"active\"\n        },\n        {\n            \"id\": 7461151,\n            \"name\": \"Subodh Mehrotra MD\",\n            \"email\": \"subodh_mehrotra_md@stokes.example\",\n            \"gender\": \"male\",\n            \"status\": \"inactive\"\n        },\n        {\n            \"id\": 7457869,\n            \"name\": \"Gov. Sloka Bandopadhyay\",\n            \"email\": \"bandopadhyay_gov_sloka@thompson.test\",\n            \"gender\": \"female\",\n            \"status\": \"active\"\n        },\n        {\n            \"id\": 7457868,\n            \"name\": \"Arjun Guha\",\n            \"email\": \"arjun_guha@feil-balistreri.test\",\n            \"gender\": \"female\",\n            \"status\": \"inactive\"\n        },\n        {\n            \"id\": 7457867,\n            \"name\": \"Girija Acharya\",\n            \"email\": \"acharya_girija@kuhlman.test\",\n            \"gender\": \"female\",\n            \"status\": \"active\"\n        }\n    ]\n}"
+				},
+				{
+					"name": "GetUser",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/public-api/users/",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"public-api",
+								"users",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 09 Oct 2024 02:47:00 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"d7f1eb9a3bec4bb0c8e7e7a94940fa02\""
+						},
+						{
+							"key": "referrer-policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "vary",
+							"value": "Origin"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-download-options",
+							"value": "noopen"
+						},
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "x-permitted-cross-domain-policies",
+							"value": "none"
+						},
+						{
+							"key": "x-request-id",
+							"value": "7bee0292-04ab-4595-921b-6132406ac7a8"
+						},
+						{
+							"key": "x-runtime",
+							"value": "0.028551"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "0"
+						},
+						{
+							"key": "cf-cache-status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=aPKkCKGgHLY5xSASCmNMKnY3ZweSbJowPSn%2FjppXUKuoFj6GWjn9vzVaPgBRlp5WwdykKj4N210kEFxd7%2BeFFKf4FzTpB10EKK7q4kEIIgb9mY4Zvs5%2BQT%2BwBWlYbGc%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "NEL",
+							"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "8cfb0b1ebb6e0d7d-MRS"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"meta\": {\n        \"pagination\": {\n            \"total\": 2864,\n            \"pages\": 287,\n            \"page\": 1,\n            \"limit\": 10\n        }\n    },\n    \"data\": [\n        {\n            \"id\": 7461161,\n            \"name\": \"Laal Kocchar MD\",\n            \"email\": \"laal_kocchar_md@stokes.example\",\n            \"gender\": \"female\",\n            \"status\": \"inactive\"\n        },\n        {\n            \"id\": 7461158,\n            \"name\": \"Kama Agarwal LLD\",\n            \"email\": \"kama_lld_agarwal@feest.example\",\n            \"gender\": \"female\",\n            \"status\": \"inactive\"\n        },\n        {\n            \"id\": 7461155,\n            \"name\": \"Chaturbhuj Singh\",\n            \"email\": \"singh_chaturbhuj@hickle-roob.test\",\n            \"gender\": \"female\",\n            \"status\": \"active\"\n        },\n        {\n            \"id\": 7461154,\n            \"name\": \"Msgr. Triloki Nath Varma\",\n            \"email\": \"msgr_nath_varma_triloki@zieme.test\",\n            \"gender\": \"female\",\n            \"status\": \"inactive\"\n        },\n        {\n            \"id\": 7461153,\n            \"name\": \"Subhasini Pothuvaal\",\n            \"email\": \"subhasini_pothuvaal@sawayn.example\",\n            \"gender\": \"male\",\n            \"status\": \"inactive\"\n        },\n        {\n            \"id\": 7461152,\n            \"name\": \"Dhana Banerjee\",\n            \"email\": \"banerjee_dhana@swaniawski-fay.example\",\n            \"gender\": \"male\",\n            \"status\": \"active\"\n        },\n        {\n            \"id\": 7461151,\n            \"name\": \"Subodh Mehrotra MD\",\n            \"email\": \"subodh_mehrotra_md@stokes.example\",\n            \"gender\": \"male\",\n            \"status\": \"inactive\"\n        },\n        {\n            \"id\": 7457869,\n            \"name\": \"Gov. Sloka Bandopadhyay\",\n            \"email\": \"bandopadhyay_gov_sloka@thompson.test\",\n            \"gender\": \"female\",\n            \"status\": \"active\"\n        },\n        {\n            \"id\": 7457868,\n            \"name\": \"Arjun Guha\",\n            \"email\": \"arjun_guha@feil-balistreri.test\",\n            \"gender\": \"female\",\n            \"status\": \"inactive\"\n        },\n        {\n            \"id\": 7457867,\n            \"name\": \"Girija Acharya\",\n            \"email\": \"acharya_girija@kuhlman.test\",\n            \"gender\": \"female\",\n            \"status\": \"active\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GetBookingAPI",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://restful-booker.herokuapp.com/booking/1",
+					"protocol": "https",
+					"host": [
+						"restful-booker",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"booking",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetUserQueryParm",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://gorest.co.in/public-api/users/?name=Eshita Shukla&gender=female",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public-api",
+						"users",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Eshita Shukla"
+						},
+						{
+							"key": "gender",
+							"value": "female"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetUser",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/public-api/users/",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"public-api",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
